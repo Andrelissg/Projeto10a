@@ -5,6 +5,9 @@ Este é um projeto de gerenciamento de biblioteca pessoal desenvolvido com Next.
 
 📋 Status do Projeto - em andamento
 Funcionalidades Implementadas
+
+---
+
 ✅ Configuração inicial do projeto Next.js 15 com TypeScript
 
 ✅ Estrutura de pastas organizada para escalabilidade
