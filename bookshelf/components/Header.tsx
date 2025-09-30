@@ -1,16 +1,4 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "BookShelf - Sua Biblioteca Pessoal",
-  description: "Gerencie sua coleção de livros",
-};
-
-// Componente Header DIRETO no layout (sem import)
-function Header() {
+export default function Header() {
   return (
     <header className="bg-white shadow-sm border-b">
       <div className="container mx-auto px-4 py-4">
@@ -43,22 +31,5 @@ function Header() {
         </div>
       </div>
     </header>
-  );
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="pt-BR">
-      <body className={inter.className}>
-        <div className="min-h-screen bg-gray-50">
-          <Header />
-          <main>{children}</main>
-        </div>
-      </body>
-    </html>
   );
 }
